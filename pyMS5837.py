@@ -5,6 +5,7 @@ import smbus
 import time
 import math
 import signal
+import sys
 import curses
 
 # Sensor-specific definitions
