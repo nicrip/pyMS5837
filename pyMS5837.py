@@ -144,7 +144,9 @@ class MS5837(object):
             console.addstr(16,0,'Altitude:')
             console.addstr(17,0,'    Air: {:6.2f} m'.format(self.get_altitude()))
             console.addstr(18,0,'')
-            console.addstr(19,0,'Press `q` to quit.')
+            console.addstr(19,0,'Loop Cycle Time: {:4.2f} ms'.format(loop_time*1e3))
+            console.addstr(20,0,'')
+            console.addstr(21,0,'Press `q` to quit.')
             console.refresh()
 
             try:
