@@ -277,5 +277,6 @@ class MS5837(object):
         self.n_rem = n_rem
         return n_rem ^ 0x00
 
-ms5837 = MS5837(2, model=MODEL_30BA, fluid_density=DENSITY_FRESHWATER, oversampling=OSR_8192)
-ms5837.run()
+if __name__ == "__main__":
+    ms5837 = MS5837(2, model=MODEL_30BA, fluid_density=DENSITY_FRESHWATER, oversampling=OSR_8192)
+    ms5837.run()
